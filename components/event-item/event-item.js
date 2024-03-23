@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 import styles from "./event-item.module.css";
+import Button from "../button/button";
 
 export default function EventItem(props) {
 	return (
@@ -18,7 +19,7 @@ export default function EventItem(props) {
 					</div>
 				</div>
 				<div className={styles.actions}>
-					<Link href={`/events/${props.id}`}>Explore event</Link>
+					<Button link={`/events/${props.id}`}>Explore event</Button>
 				</div>
 			</div>
 		</li>
