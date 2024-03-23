@@ -11,5 +11,9 @@ export default function EventsSlugPage() {
 	const [year, month] = slug;
 	const events = getFilteredEvents({ year: +year, month: +month });
 
+	if (!events || events.length === 0) {
+		return <h3>No events</h3>;
+	}
+
 	return <EventList items={events} />;
 }
