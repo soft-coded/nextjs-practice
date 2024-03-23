@@ -16,7 +16,7 @@ export default function EventItem(props) {
 					</div>
 				</div>
 				<div>
-					<Link href="/">Explore event</Link>
+					<Link href={`/events/${props.id}`}>Explore event</Link>
 				</div>
 			</div>
 		</li>
