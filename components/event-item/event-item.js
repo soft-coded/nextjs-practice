@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+import styles from "./event-item.module.css";
+
 export default function EventItem(props) {
 	return (
-		<li>
+		<li className={styles.item}>
 			<img src={"/" + props.image} alt={props.title} />
 			<div>
 				<div>
